@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,600,700,800");
+@import url("https://necolas.github.io/normalize.css/7.0.0/normalize.css");
+* {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  font-family: 'Assistant', sans-serif;
+  list-style: none;
+}
+ 
+
+ /*# sourceMappingURL= main.css.map */
