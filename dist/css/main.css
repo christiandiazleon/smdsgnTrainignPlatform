@@ -6,3 +6,8 @@
   clear: both;
   font-family: 'Assistant', sans-serif;
   list-style: none; }
+
+header {
+  background-color: wheat; }
+  header .vslogo {
+    width: 115px; }
