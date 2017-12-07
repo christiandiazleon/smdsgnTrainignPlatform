@@ -10,7 +10,8 @@
   color: #424242; }
 
 header {
-  border-bottom: 1px solid #a3a3a3; }
+  border-bottom: 1px solid #a3a3a3;
+  margin-bottom: 10px; }
   header .vslogo {
     text-align: center;
     padding: 20px 0 10px 0; }
@@ -48,7 +49,8 @@ header {
         margin-right: 5px; }
       header .pull-right .profile-opt span {
         display: inline-block;
-        vertical-align: middle; }
+        vertical-align: middle;
+        margin-right: 8px; }
         header .pull-right .profile-opt span p {
           display: inline-block;
           vertical-align: middle;
@@ -70,15 +72,76 @@ header {
         color: #59c140;
         display: inline-block; }
 
-.side-library .curriculum li a {
-  display: inline-block;
-  overflow: hidden;
-  background-color: #59c140;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  text-align: center; }
-  .side-library .curriculum li a img {
-    padding: 3px;
-    width: 10px;
-    margin: 6px 8px; }
+.side-library {
+  border-bottom: 1px solid #a3a3a3; }
+  .side-library h3 {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #f4f4f4; }
+  .side-library .search-icon {
+    display: none;
+    margin: 10px 0;
+    text-align: center; }
+    .side-library .search-icon input {
+      padding: 5px 10px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      border-radius: 50px;
+      border: 1px solid #a3a3a3;
+      margin-right: 5px; }
+    .side-library .search-icon img {
+      height: 20px;
+      vertical-align: middle; }
+  .side-library .filter {
+    display: none;
+    margin-bottom: 10px;
+    text-align: center; }
+    .side-library .filter select {
+      padding: 5px 10px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      border-radius: 50px;
+      border: 1px solid #a3a3a3;
+      margin-right: 5px; }
+  .side-library .main-library {
+    display: none; }
+  .side-library .curriculum {
+    margin-bottom: 20px; }
+    .side-library .curriculum h5 {
+      background-color: #f4f4f4;
+      padding: 5px 10px; }
+      .side-library .curriculum h5 img {
+        height: 7px;
+        float: right;
+        margin-top: 4px; }
+    .side-library .curriculum ul {
+      padding: 5px 10px; }
+    .side-library .curriculum li {
+      padding: 6px 0; }
+      .side-library .curriculum li img {
+        vertical-align: middle;
+        width: 70px;
+        margin-right: 10px; }
+      .side-library .curriculum li .info {
+        display: inline-block;
+        vertical-align: middle; }
+        .side-library .curriculum li .info p {
+          font-weight: 700; }
+        .side-library .curriculum li .info span {
+          font-size: 0.9em; }
+      .side-library .curriculum li a {
+        display: inline-block;
+        overflow: hidden;
+        background-color: #59c140;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        text-align: center; }
+        .side-library .curriculum li a img {
+          padding: 3px;
+          width: 9px;
+          margin: 4px 6px; }

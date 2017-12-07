@@ -1,5 +1,6 @@
 header {
     border-bottom: $border;
+    margin-bottom: 10px;
     .vslogo {
         text-align: center;
         padding: 20px 0 10px 0;
@@ -47,6 +48,7 @@ header {
             span {
                 display: inline-block;
                 vertical-align: middle;
+                margin-right: 8px;
                 p{
                     display: inline-block;
                     vertical-align: middle;

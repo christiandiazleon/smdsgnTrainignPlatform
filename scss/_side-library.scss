@@ -1,29 +1,85 @@
 .side-library {
-    .curriculum {
-        li {
-            img {
+    border-bottom: $border;
+    h3{
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.1em;
+        background-color: $light-gray;
+    }
+    .search-icon {
+        display: none;
+        margin: 10px 0;
+        text-align: center;
+        input {
+            padding: 5px 10px;
+            @include border-radius(50px);
+            border: $border;
+            margin-right: 5px;
+        }
+        img {
+            height: 20px;
+            vertical-align: middle;
+        }
+    }
+    .filter {
+        display: none;
+        margin-bottom: 10px;
+        text-align: center;
+        select {
+            padding: 5px 10px;
+            @include border-radius(50px);
+            border: $border;
+            margin-right: 5px;
+        }
+    }
+    .main-library {
+        display: none;
+    }
 
+    .curriculum {
+        margin-bottom: 20px;
+        h5 {
+            background-color: $light-gray;
+            padding: 5px 10px;
+            img {
+                height: 7px;
+                float: right;
+                margin-top: 4px;
+            }
+        }
+        ul {
+            padding: 5px 10px;
+        }
+        li {
+            padding: 6px 0;
+            img {
+                vertical-align: middle;
+                width: 70px;
+                margin-right: 10px;
             }
             .info {
+                display: inline-block;
+                vertical-align: middle;
                 p {
-
+                    font-weight: 700;
                 }
                 span {
-
+                    font-size: 0.9em;
                 }
             }
             a {
                 display: inline-block;
                 overflow: hidden;
                 background-color: $green;
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
                 border-radius: 50%;
                 text-align: center;
                 img {
                     padding: 3px;
-                    width: 10px;
-                    margin: 6px 8px;
+                    width: 9px;
+                    margin: 4px 6px;
                 }
             }
         }
