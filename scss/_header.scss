@@ -1,10 +1,79 @@
 header {
-    background-color: wheat;
+    border-bottom: $border;
     .vslogo {
-        width: 115px;
-       img {
-           
-       } 
+        text-align: center;
+        padding: 20px 0 10px 0;
+        img {
+            width: 115px;
+            height: auto;
+        } 
+    }
+    nav {
+        font-weight: 700;
+        .menu-btn{
+            display: block;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1em;
+            background-color: $light-gray;
+        }
+        ul {
+            display: none;
+            li {
+                display: block;
+                text-align: center;
+                a {
+                    display: block;
+                    padding: 5px;
+                }
+            }
+            li:hover {
+                background-color: $light-gray;
+            }
+        }
+    }
+    .pull-right {
+        display: none;
+        margin-top: 10px;
+        .profile-opt {
+            text-align: center;
+            padding: 8px;
+            img {
+                height: 24px;
+                width: auto; 
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                p{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+                img {
+                    margin: 0;
+                    height: 9px;
+                    width: auto; 
+                }
+            }
+        }
+        .shop-cart {
+            text-align: center;
+            display: block;
+            padding: 8px;
+            img {
+                height: 25px;
+                vertical-align: middle;
+            }
+            p {
+                font-weight: 700;
+                font-size: 1.1em;
+                color: $green;
+                display: inline-block;
+            }
+        }
     }
 }
 
@@ -12,15 +81,15 @@ header {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
+    
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
+    
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+    
 }

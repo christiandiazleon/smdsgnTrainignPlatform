@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "Plataforma de entrenamiento simdesign",
   "main": "index.html",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Jeronimo Yepes",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^2.2.0"
   },
   "dependencies": {
     "gulp": "^3.9.1",

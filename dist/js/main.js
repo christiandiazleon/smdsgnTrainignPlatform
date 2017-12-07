@@ -1,0 +1,1 @@
+$(document).ready(function(n){n(".menu-btn").on("click",function(){n(this).next().slideToggle(240),n(".pull-right").delay(60).slideToggle(240)})}),$(document).ready(function(n){n(window).resize(function(){n(window).width()})});

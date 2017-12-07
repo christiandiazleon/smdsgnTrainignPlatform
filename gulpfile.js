@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 const jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
+var concat = require('gulp-concat');
 
 // Compilar los SCSS
 gulp.task('scss', function () {
@@ -24,13 +25,14 @@ gulp.task('proj:w', function () {
 	gulp.watch(['./scss/**/*.scss', './pre-js/**/*.js'], ['build']);
 });
 
-// "Minificar"(comprimir) los archivos de javascript
+// "Minificar"(comprimir) los archivos de javascript y concatenarlos
 gulp.task('compress', function (cb) {
   console.log('compress');
   pump([
         gulp.src('pre-js/*.js'),
-        // uglify(),
-        gulp.dest('dist/js')
+        concat('main.js'),
+        uglify(),
+        gulp.dest('dist/js/')
     ],
     cb
   );
@@ -44,6 +46,6 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter('default'));
 });
 
-gulp.task('build', ['compress', 'scss', 'lint'], function(){
+gulp.task('build', ['scss', 'compress', 'lint',], function(){
 	console.log('Build complete');
-})
+});
