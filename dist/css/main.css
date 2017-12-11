@@ -270,9 +270,10 @@ header {
         float: right; }
     .shop .products .category .carousel-normal .carousel-scenes {
       display: flex;
-      width: 150%; }
+      width: 133.332%; }
     .shop .products .category .carousel-normal .scene {
-      width: 25%; }
+      width: 33.33333%;
+      margin: 0 5px; }
       .shop .products .category .carousel-normal .scene .image {
         height: 220px;
         background-size: cover;
