@@ -12,10 +12,11 @@
         margin: 10px 0;
         text-align: center;
         input {
-            padding: 5px 10px;
+            padding: 7px 13px;
             @include border-radius(50px);
             border: $border;
             margin-right: 5px;
+            font-size: 0.9em;
         }
         img {
             height: 20px;
@@ -26,11 +27,13 @@
         display: none;
         margin-bottom: 10px;
         text-align: center;
+
         select {
-            padding: 5px 10px;
+            padding: 6px 12px;
             @include border-radius(50px);
             border: $border;
             margin-right: 5px;
+            font-size: 0.9em;            
         }
     }
     .main-library {
@@ -38,14 +41,17 @@
     }
 
     .curriculum {
-        margin-bottom: 20px;
         h5 {
-            background-color: $light-gray;
-            padding: 5px 10px;
+            background-color: $gray;
+            padding: 6px 10px;
+            cursor: pointer;
+            color: #fff;
+            letter-spacing: 0.02em;
             img {
                 height: 7px;
                 float: right;
                 margin-top: 4px;
+                @include transition (150ms);
             }
         }
         ul {
@@ -53,6 +59,9 @@
         }
         li {
             padding: 6px 0;
+            .container {
+                // display: block;
+            }
             img {
                 vertical-align: middle;
                 width: 70px;
@@ -61,6 +70,7 @@
             .info {
                 display: inline-block;
                 vertical-align: middle;
+                margin-right: 20px;
                 p {
                     font-weight: 700;
                 }
@@ -68,7 +78,7 @@
                     font-size: 0.9em;
                 }
             }
-            a {
+            .run-scene-btn {
                 display: inline-block;
                 overflow: hidden;
                 background-color: $green;
@@ -82,6 +92,9 @@
                     margin: 4px 6px;
                 }
             }
+        }
+        li:last-child {
+            margin-bottom: 20px;
         }
     }
 }

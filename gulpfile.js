@@ -31,7 +31,7 @@ gulp.task('compress', function (cb) {
   pump([
         gulp.src('pre-js/*.js'),
         concat('main.js'),
-        uglify(),
+        // uglify(),
         gulp.dest('dist/js/')
     ],
     cb

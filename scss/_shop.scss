@@ -1,0 +1,155 @@
+.shop {
+    .top-bar {
+        margin-bottom: 30px;
+        .search-icon {
+            margin: 10px 0;
+            text-align: center;
+            input {
+                padding: 7px 13px;
+                @include border-radius(50px);
+                border: $border;
+                margin-right: 5px;
+                font-size: 0.9em;
+            }
+            img {
+                height: 20px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .products {
+        .category-title {
+            padding-left: 10px;
+            margin-bottom: 10px;
+            h3 {
+                display: inline-block;
+                padding: 7px 17px;
+                @include border-radius (30px);
+                background-color: $main-blue;
+                color: #fff;
+                font-weight: 700;
+                letter-spacing: 0.03em;
+            }
+        }
+        .content {
+            .info {
+                background-color: $light-gray;
+                display: block;
+                h2 {
+                    text-align: center;
+                    padding: 10px;
+                }
+                
+                .stars {
+                    padding: 10px;
+                    text-align: center;
+                    img {
+                        height: 30px;
+                    }
+                }
+                
+                .price {
+                    background-color: $green;
+                    padding: 15px;
+                    h3 {
+                        color: white;
+                        text-align: center;
+                    }
+                }
+                
+            }
+        }
+        .full-width-category {
+            margin-bottom: 50px;
+            .category-title {
+                padding: 0;
+                margin: 0;
+                h3 {
+                    display: block;
+                    padding: 15px;
+                    text-align: center;
+                    font-size: 1.3em;
+                    @include border-radius(0)
+                }
+            }
+            .content {
+                .scene {
+                }
+                .carousel-full-width {
+                    height: 300px;
+                    width: 100%;
+                    overflow: hidden;
+                    .carousel-images {
+                        height: inherit;
+                        width: 400%;
+                        display: flex;
+                        div {
+                            height: inherit;
+                            width: 100%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                    .car-control-prev, .car-control-next{
+                        height: 60px;
+                        width: auto;
+                        cursor: pointer;
+                        position: relative;
+                        padding: 40px 10px;
+                    }
+                    .car-control-prev {
+                    }
+                    .car-control-next {
+                        float: right;
+                    }
+                }
+            }
+        }
+        .category {
+            margin-bottom: 30px;
+            .content {
+                
+            }
+            .carousel-normal {
+                width: 100%;
+                overflow: hidden;
+
+                .controls {
+                    background-color: $light-gray;
+                    img {
+                        height: 40px;
+                        padding: 10px;
+                    }
+                    img:last-child {
+                        float: right;
+                    }
+                }
+                .carousel-scenes {
+                    display: flex;
+                    width: 150%;
+                }
+                .scene {
+                    // display: block;
+                    width: 25%;
+                    .image {
+                        height: 220px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    .info {
+                        h2 {
+                            
+                        }
+                        .price {
+                            h3 {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

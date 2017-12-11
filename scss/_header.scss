@@ -52,12 +52,13 @@ header {
                 p{
                     display: inline-block;
                     vertical-align: middle;
-                    margin-right: 5px;
+                    font-weight: 600;
                 }
                 img {
                     margin: 0;
                     height: 9px;
-                    width: auto; 
+                    width: auto;
+                    cursor: pointer; 
                 }
             }
         }

@@ -8,7 +8,23 @@ $border: 1px solid $gray;
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
-       -moz-border-radius: $radius;
-        -ms-border-radius: $radius;
-            border-radius: $radius;
-  }
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition ($duration) {
+    -webkit-transition: all $duration ease-in-out;
+    -moz-transition: all $duration ease-in-out;
+    -ms-transition: all $duration ease-in-out;
+    -o-transition: all $duration ease-in-out;
+    transition: all $duration ease-in-out;
+}
+
+@mixin rotate ($degrees) {
+    transform:          rotate($degrees);
+    -ms-transform:      rotate($degrees);
+    -moz-transform:     rotate($degrees);
+    -webkit-transform:  rotate($degrees);
+    -o-transform:       rotate($degrees);
+}
