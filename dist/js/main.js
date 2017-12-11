@@ -98,7 +98,7 @@ $(document).ready(function($) {
             marginLeft: 0
         }, 700, function () {
             $(this).children(".scene:last").insertBefore($(this).children(".scene:first"));
-            $(this).css('margin-left', '-33.3333%');
+            $(this).css('margin-left', '-' + normalSceneWidth + '%');
         });
 
     });
