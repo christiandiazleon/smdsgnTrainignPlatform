@@ -93,6 +93,63 @@ header {
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    
+@media (min-width: 1000px) {
+    header {
+        margin-bottom: 0;
+        .vslogo {
+            text-align: left;
+            padding: 20px;
+            display: inline-block;
+            width: 250px;
+            img {
+                width: 115px;
+                height: auto;
+            } 
+        }
+        nav {
+            display: inline-block;
+            .menu-btn{
+                display: none;
+            }
+            ul {
+                display: initial;
+                li {
+                    display: inline-block;
+                    font-size: 1.3em;
+                    a {
+                        padding: 5px 15px;
+                    }
+                }
+                li:hover {
+                    background-color: initial;
+                }
+                li:hover a {
+                    border-bottom: $border;
+                }
+            }
+        }
+        .pull-right {
+            display: inline-block;
+            margin-top: 10px;
+            float: right;
+            .profile-opt {
+                padding: 8px;
+            }
+            .shop-cart {
+                text-align: right;
+                display: block;
+                padding: 8px;
+                img {
+                    height: 25px;
+                    vertical-align: middle;
+                }
+                p {
+                    font-weight: 700;
+                    font-size: 1.1em;
+                    color: $green;
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }

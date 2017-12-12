@@ -73,8 +73,6 @@
                 }
             }
             .content {
-                .scene {
-                }
                 .carousel-full-width {
                     height: 300px;
                     width: 100%;
@@ -98,8 +96,6 @@
                         position: relative;
                         padding: 40px 10px;
                     }
-                    .car-control-prev {
-                    }
                     .car-control-next {
                         float: right;
                     }
@@ -108,21 +104,21 @@
         }
         .category {
             margin-bottom: 30px;
-            .content {
-                
-            }
             .carousel-normal {
                 width: 100%;
                 overflow: hidden;
-
+                
                 .controls {
                     background-color: $light-gray;
+                    margin: 0 5px;
                     img {
                         height: 40px;
-                        padding: 10px;
+                        padding: 10px 50px 10px 10px;
+                        cursor: pointer;
                     }
                     img:last-child {
                         float: right;
+                        padding: 10px 10px 10px 50px;
                     }
                 }
                 .carousel-scenes {
@@ -139,18 +135,108 @@
                         background-repeat: no-repeat;
                         background-position: center;
                     }
-                    .info {
-                        h2 {
-                            
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .shop {
+        display: inline-block; 
+        vertical-align: top;
+        max-width: 920px;
+        .top-bar {
+            margin-bottom: 0;
+            .search-icon {
+                text-align: right;
+            }
+        }
+        .products {
+            .category-title {
+                padding-left: 0;
+            }
+            .category {
+                .controls {
+                    img {
+                        height: 30px!important;
+                    }
+                }
+            }
+            .content {
+                .info {
+                    h2 {
+                        font-size: 1.1em;
+                        text-align: left;
+                    }
+                    .price {
+                        padding: 5px 15px;
+                        h3 {
+                            text-align: left;
+                            font-size: 1em;
                         }
+                    }
+                }
+            }
+            .full-width-category {
+                .category-title {
+                    margin-bottom: 10px;
+                    h3 {
+                        display: inline-block;
+                        padding: 7px 17px;
+                        @include border-radius (30px);
+                        background-color: $main-blue;
+                        color: #fff;
+                        font-weight: 700;
+                        letter-spacing: 0.03em;
+                    }
+                }
+                .content {
+                    .carousel-full-width {
+                        .car-control-prev, .car-control-next{
+                            height: 40px;
+                        }
+                    }
+                }
+                .content {
+                    .star-price {
+                        float: right;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .info {
+                        min-height: 51px;
+                        h2 {
+                            display: inline-block;
+                            text-align: left;
+                            max-width: 600px;
+                            font-size: 1.3em;
+                            vertical-align: middle;
+                        }
+                        
+                        .stars {
+                            display: inline-block;
+                            text-align: right;
+                            vertical-align: middle;
+                            img {
+                                height: 17px;
+                            }
+                        }
+                        
                         .price {
+                            display: inline-block;
+                            vertical-align: middle;
+                            padding: 15px;
                             h3 {
-                                
+                                color: white;
+                                text-align: center;
+                                font-size: 1.2em;
                             }
                         }
                     }
                 }
             }
+            
         }
     }
 }

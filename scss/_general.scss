@@ -11,8 +11,30 @@
     color: $dark-gray;
 }
 
-body {
-    display: none;
+// body {
+//     display: none;
+// }
+
+.wrapper {
+    max-width: 1200px;
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .wrapper {
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 2200px) {
+    .wrapper {
+        margin-left: 25%;
+    }
 }
 
 .rotated {

@@ -14,399 +14,407 @@
 </head>
 <body>
     <header>
-        <!-- logo virtual skill -->
-        <div class="vslogo">
-            <img src="img/vslogo.svg" alt="">
-        </div> 
-        
-        <nav>
-            <a href="#" class="menu-btn">Menú</a>
+        <div class="wrapper">
+            <!-- logo virtual skill -->
+            <div class="vslogo">
+                <img src="img/vslogo.svg" alt="">
+            </div> 
             
-            <ul>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Biblioteca</a></li>
-                <li><a href="#">Comunidad</a></li>
-                <li><a href="#">Clasificación</a></li>
-            </ul>
-        </nav>
-        
-        <!-- Perfil, Opciones y Carrito -->
-        <div class="pull-right">
-            <div class="profile-opt">
-                <img src="img/icons/user.svg" alt="">
-                <span>
-                    <p>Jerónimo</p>
-                    <img src="img/icons/toggle.svg" alt="">
-                </span>
-                <!-- Link de pantalla de opciones -->
-                <a href="#"><img src="img/icons/gear.svg" alt=""></a>
+            <nav>
+                <a href="#" class="menu-btn">Menú</a>
+                
+                <ul>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Clasificación</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Perfil, Opciones y Carrito -->
+            <div class="pull-right">
+                <div class="profile-opt">
+                    <img src="img/icons/user.svg" alt="">
+                    <span>
+                        <p>Jerónimo</p>
+                        <img src="img/icons/toggle.svg" alt="">
+                    </span>
+                    <!-- Link de pantalla de opciones -->
+                    <a href="#"><img src="img/icons/gear.svg" alt=""></a>
+                </div>
+                <!-- carrito -->
+                <a href="#" class="shop-cart">
+                    <img src="img/icons/cart.svg" alt="">
+                    <p>Carrito</p>
+                </a>
             </div>
-            <!-- carrito -->
-            <a href="#" class="shop-cart">
-                <img src="img/icons/cart.svg" alt="">
-                <p>Carrito</p>
-            </a>
+            <!-- // Termina Perfil, Opciones y Carrito // -->
         </div>
-        <!-- // Termina Perfil, Opciones y Carrito // -->
-        
     </header>
     
-    <!-- Comienza Barra lateral donde esta la biblioteca -->
-    <div class="side-library">
-        <h3>Mis escenas</h3>
+    <!-- // Comienza Wrapper -->
+    <div class="wrapper">
         
-        <!-- input de busqueda de escenas en la biblioteca -->
-        <div class="search-icon">
-            <input type="text" name="lib-search" id="lib-search" placeholder="Buscar en biblioteca">
-            <img src="img/icons/search.svg" alt="">
-        </div>
-        <!-- // input de busqueda de escenas en la biblioteca -->
-        
-        <div class="filter">
-            <p>Ordenar por:</p>
-            <select name="" id="">
-                <option value="">fecha de compra</option>
-                <option value="">Nombre</option>
-            </select>
-        </div>
-        
-        <!-- Comienza Contenedor de los curriculos -->
-        <div class="main-library">
+        <!-- Comienza Barra lateral donde esta la biblioteca -->
+        <div class="side-library">
+            <h3>Mis escenas</h3>
             
-            <!-- Comienza curriculo-->
-            <div class="curriculum">
-                <h5>Sin curriculo asignado<img src="img/icons/toggle-white.svg" alt=""></h5>
-                <ul>
-                    <!-- Comienza escenario -->
-                    <li>
-                        <!-- este link es para llevarte a la escena en la biblioteca -->
-                        <a class="container" href="#">
-                            <img src="img/scenes/miniature_1.png" alt="">
-                            <div class="info">
-                                <p>Escenario 1</p>
-                                <span>32h</span>
-                            </div>
-                        </a>
-                        <!-- boton para ejecutar la escenario -->
-                        <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
-                    </li>
-                    <!-- //  Termina escenario  // -->
-                    
-                    <li>
-                        <a class="container" href="#">
-                            <img src="img/scenes/miniature_2.png" alt="">
-                            <div class="info">
-                                <p>Escenario 2</p>
-                                <span>54h</span>
-                            </div>
-                        </a>
-                        <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
-                    </li>
-                    
-                    <li>
-                        <a class="container" href="#">
-                            <img src="img/scenes/miniature_3.png" alt="">
-                            <div class="info">
-                                <p>Escenario 3</p>
-                                <span>23h</span>
-                            </div>
-                        </a>
-                        <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
-                    </li>
-                    
-                    <li>
-                        <a class="container" href="#">
-                            <img src="img/scenes/miniature_4.png" alt="">
-                            <div class="info">
-                                <p>Escenario 4</p>
-                                <span>12h</span>
-                            </div>
-                        </a>
-                        <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <!-- // Termina curriculo // -->
-            
-            <!-- Comienza curriculo-->
-            <div class="curriculum">
-                <h5>Laparoscopia - curriculo<img src="img/icons/toggle-white.svg" alt=""></h5>
-                <ul>
-                    <!-- Comienza escenario -->
-                    <li>
-                        <!-- este link es para llevarte a la escena en la biblioteca -->
-                        <a class="container" href="#">
-                            <img src="img/scenes/miniature_5.png" alt="">
-                            <div class="info">
-                                <p>Escenario 1</p>
-                                <span>32h</span>
-                            </div>
-                        </a>
-                        <!-- boton para ejecutar el escenario -->
-                        <a class="run-scene-btn" href="#">
-                            <img src="img/icons/play.svg" alt="">
-                        </a>
-                    </li>
-                    <!-- //  Termina escenario  // -->
-                    
-                    <li>
-                        <a class="container" href="#">
-                            <img src="img/scenes/miniature_5.png" alt="">
-                            <div class="info">
-                                <p>Escenario 1</p>
-                                <span>32h</span>
-                            </div>
-                        </a>
-                        <a class="run-scene-btn" href="#">
-                            <img src="img/icons/play.svg" alt="">
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a class="container" href="#">
-                            <img src="img/scenes/miniature_5.png" alt="">
-                            <div class="info">
-                                <p>Escenario 1</p>
-                                <span>32h</span>
-                            </div>
-                        </a>
-                        <a class="run-scene-btn" href="#">
-                            <img src="img/icons/play.svg" alt="">
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a class="container" href="#">
-                            <img src="img/scenes/miniature_5.png" alt="">
-                            <div class="info">
-                                <p>Escenario 1</p>
-                                <span>32h</span>
-                            </div>
-                        </a>
-                        <a class="run-scene-btn" href="#">
-                            <img src="img/icons/play.svg" alt="">
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <!-- // Termina curriculo // -->
-            
-            
-        </div>
-        <!-- // Termina Contenedor de los curriculos // -->
-        
-    </div>
-    <!-- // Termina Barra lateral donde esta la biblioteca // -->
-    
-    <!-- Comienza contenido principal tienda -->
-    <div class="shop">
-        <div class="top-bar">
+            <!-- input de busqueda de escenas en la biblioteca -->
             <div class="search-icon">
-                <!-- Busqueda de escenarios en la tienda -->
-                <input type="text" name="shop-search" id="shop-search" placeholder="Buscar en tienda">
-                <i><img src="img/icons/search.svg" alt=""> </i>
+                <input type="text" name="lib-search" id="lib-search" placeholder="Buscar en biblioteca">
+                <img src="img/icons/search.svg" alt="">
             </div>
-        </div>
-        <div class="products">
+            <!-- // input de busqueda de escenas en la biblioteca -->
             
-            <!-- Comienza categoría full-width -->
-            <div class="full-width-category">
-                <div class="category-title">
-                    <h3>Novedad</h3>
+            <div class="filter">
+                <p>Ordenar por:</p>
+                <select name="" id="">
+                    <option value="">fecha de compra</option>
+                    <option value="">Nombre</option>
+                </select>
+            </div>
+            
+            <!-- Comienza Contenedor de los curriculos -->
+            <div class="main-library">
+                
+                <!-- Comienza curriculo-->
+                <div class="curriculum">
+                    <h5>Sin curriculo asignado<img src="img/icons/toggle-white.svg" alt=""></h5>
+                    <ul>
+                        <!-- Comienza escenario -->
+                        <li>
+                            <!-- este link es para llevarte a la escena en la biblioteca -->
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_1.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <!-- boton para ejecutar la escenario -->
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        <!-- //  Termina escenario  // -->
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_2.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 2</p>
+                                    <span>54h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_3.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 3</p>
+                                    <span>23h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_4.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 4</p>
+                                    <span>12h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                    </ul>
                 </div>
-                <div class="content">
-                    <div class="scene">
+                <!-- // Termina curriculo // -->
+                
+                <!-- Comienza curriculo-->
+                <div class="curriculum">
+                    <h5>Laparoscopia - curriculo<img src="img/icons/toggle-white.svg" alt=""></h5>
+                    <ul>
+                        <!-- Comienza escenario -->
+                        <li>
+                            <!-- este link es para llevarte a la escena en la biblioteca -->
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <!-- boton para ejecutar el escenario -->
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        <!-- //  Termina escenario  // -->
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- // Termina curriculo // -->
+                
+                
+            </div>
+            <!-- // Termina Contenedor de los curriculos // -->
+            
+        </div>
+        <!-- // Termina Barra lateral donde esta la biblioteca // -->
+        
+        <!-- Comienza contenido principal tienda -->
+        <div class="shop">
+            <div class="top-bar">
+                <div class="search-icon">
+                    <!-- Busqueda de escenarios en la tienda -->
+                    <input type="text" name="shop-search" id="shop-search" placeholder="Buscar en tienda">
+                    <i><img src="img/icons/search.svg" alt=""> </i>
+                </div>
+            </div>
+            <div class="products">
+                
+                <!-- Comienza categoría full-width -->
+                <div class="full-width-category">
+                    <div class="category-title">
+                        <h3>Novedad</h3>
+                    </div>
+                    <div class="content">
+                        <div class="scene">
+                            
+                            <!-- Comienza carousel -->
+                            <div class="carousel carousel-full-width">
+                                
+                                <!-- Comienza imagenes del carousel -->
+                                <!-- Este ↓ link te lleva a la pagina del escenario -->
+                                <a href="#" class="carousel-images">
+                                    <div style="background-image: url('img/scenes/screenshot_1.jpg')"></div>
+                                    <div style="background-image: url('img/scenes/screenshot_2.png')"></div>
+                                    <div style="background-image: url('img/scenes/screenshot_3.png')"></div>
+                                    <div style="background-image: url('img/scenes/screenshot_4.png')"></div>
+                                </a>
+                                <!-- // Termina imagenes del carousel -->
+                                
+                                <img class="car-control-prev" src="img/icons/slider-arrow-prev.svg" alt="<">
+                                <img class="car-control-next" src="img/icons/slider-arrow-next.svg" alt=">">   
+                                
+                            </div>
+                            <!-- // Termina Carousel -->
+                            
+                            <!-- Este ↓ link te lleva a la pagina del escenario -->
+                            <a href="#" class="info">
+                                <h2>Simulación de procedimientos cardiacos</h2>
+                                <div class="star-price">
+                                    <div class="stars">
+                                        <!-- Estrellas -->
+                                        <img src="img/icons/4-star.svg" alt="">
+                                    </div>
+                                    <div class="price">
+                                        <h3>COP$ 40.000</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                <!-- // Termina categoría full-width -->
+                
+                <!-- Comienza categoría normal -->
+                <div class="category">
+                    <div class="category-title">
+                        <h3>Categoría 1</h3>
+                    </div>
+                    <div class="content">
                         
                         <!-- Comienza carousel -->
-                        <div class="carousel carousel-full-width">
+                        <div class="carousel-normal">
                             
-                            <!-- Comienza imagenes del carousel -->
-                            <!-- Este ↓ link te lleva a la pagina del escenario -->
-                            <a href="#" class="carousel-images">
-                                <div style="background-image: url('img/scenes/screenshot_1.jpg')"></div>
-                                <div style="background-image: url('img/scenes/screenshot_2.png')"></div>
-                                <div style="background-image: url('img/scenes/screenshot_3.png')"></div>
-                                <div style="background-image: url('img/scenes/screenshot_4.png')"></div>
-                            </a>
-                            <!-- // Termina imagenes del carousel -->
-                            
-                            <img class="car-control-prev" src="img/icons/slider-arrow-prev.svg" alt="<">
-                            <img class="car-control-next" src="img/icons/slider-arrow-next.svg" alt=">">   
-                            
-                        </div>
-                        <!-- // Termina Carousel -->
-                        
-                        <!-- Este ↓ link te lleva a la pagina del escenario -->
-                        <a href="#" class="info">
-                            <h2>Simulación de procedimientos cardiacos</h2>
-                            <div class="stars">
-                                <!-- Estrellas -->
-                                <img src="img/icons/4-star.svg" alt="">
+                            <div class="carousel-scenes">
+                                <!-- Comienza escenario, tiene que haber mas de 3 escenarios ojala 4 para que el carousel funcione -->
+                                <a href="#1" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_1.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- // Termina escenario -->
+                                
+                                <a href="#2" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_2.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="#3" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_3.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="#4" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_4.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                
                             </div>
-                            <div class="price">
-                                <h3>COP$ 40.000</h3>
+                            
+                            <div class="controls">
+                                <img src="img/icons/slider-arrow-prev.svg" class="prev" alt="<">
+                                <img src="img/icons/slider-arrow-next.svg" class="next" alt=">">   
                             </div>
-                        </a>
-                    </div>
-                </div> 
-            </div>
-            <!-- // Termina categoría full-width -->
-            
-            <!-- Comienza categoría normal -->
-            <div class="category">
-                <div class="category-title">
-                    <h3>Categoría 1</h3>
+                            
+                        </div>
+                        <!-- // Termina carousel -->
+                        
+                        
+                    </div> 
                 </div>
-                <div class="content">
-                    
-                    <!-- Comienza carousel -->
-                    <div class="carousel-normal">
-                        
-                        <div class="carousel-scenes">
-                            <!-- Comienza escenario, tiene que haber mas de 3 escenarios ojala 4 para que el carousel funcione -->
-                            <a href="#1" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_1.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- // Termina escenario -->
-                            
-                            <a href="#2" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_2.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            <a href="#3" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_3.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            <a href="#4" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_4.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                        </div>
-                        
-                        <div class="controls">
-                            <img src="img/icons/slider-arrow-prev.svg" class="prev" alt="<">
-                            <img src="img/icons/slider-arrow-next.svg" class="next" alt=">">   
-                        </div>
-                        
+                <!-- // Termina Categoría Normal -->
+                
+                
+                <!-- Comienza categoría normal -->
+                <div class="category">
+                    <div class="category-title">
+                        <h3>Categoría 2</h3>
                     </div>
-                    <!-- // Termina carousel -->
-                    
-                    
-                </div> 
-            </div>
-            <!-- // Termina Categoría Normal -->
-            
-            
-            <!-- Comienza categoría normal -->
-            <div class="category">
-                <div class="category-title">
-                    <h3>Categoría 1</h3>
+                    <div class="content">
+                        
+                        <!-- Comienza carousel -->
+                        <div class="carousel-normal">
+                            
+                            <!-- tiene que haber mas de 3 escenarios ojala 4 para que el carousel funcione -->
+                            <div class="carousel-scenes">
+                                <a href="#1" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_1.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                
+                                <a href="#2" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_2.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="#3" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_3.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="#4" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_4.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="#5" class="scene">
+                                    <div class="image" style="background-image: url('img/scenes/thumbnail_5.jpg')"></div>
+                                    <div class="info">
+                                        <h2>Simulación de procedimientos cardiacos</h2>
+                                        <div class="price">
+                                            <h3>COP$ 40.000</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                
+                            </div>
+                            
+                            <div class="controls">
+                                <img src="img/icons/slider-arrow-prev.svg" class="prev" alt="<">
+                                <img src="img/icons/slider-arrow-next.svg" class="next" alt=">">   
+                            </div>
+                            
+                        </div>
+                        <!-- // Termina carousel -->
+                        
+                        
+                    </div> 
                 </div>
-                <div class="content">
-                    
-                    <!-- Comienza carousel -->
-                    <div class="carousel-normal">
-                        
-                        <!-- tiene que haber mas de 3 escenarios ojala 4 para que el carousel funcione -->
-                        <div class="carousel-scenes">
-                            <a href="#1" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_1.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            
-                            <a href="#2" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_2.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            <a href="#3" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_3.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            <a href="#4" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_4.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            <a href="#5" class="scene">
-                                <div class="image" style="background-image: url('img/scenes/thumbnail_5.jpg')"></div>
-                                <div class="info">
-                                    <h2>Simulación de procedimientos cardiacos</h2>
-                                    <div class="price">
-                                        <h3>COP$ 40.000</h3>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            
-                        </div>
-                        
-                        <div class="controls">
-                            <img src="img/icons/slider-arrow-prev.svg" class="prev" alt="<">
-                            <img src="img/icons/slider-arrow-next.svg" class="next" alt=">">   
-                        </div>
-                        
-                    </div>
-                    <!-- // Termina carousel -->
-                    
-                    
-                </div> 
+                <!-- // Termina Categoría Normal -->
+                
+                
             </div>
-            <!-- // Termina Categoría Normal -->
-            
-            
         </div>
+        <!-- // Termina contenido principal tienda -->
+        
     </div>
-    <!-- // Termina contenido principal tienda -->
-    
+    <!-- // Termina Wrapper -->
 </body>
 
 <script>$('body').fadeIn(100);</script>
