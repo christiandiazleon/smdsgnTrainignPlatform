@@ -56,8 +56,10 @@ header {
         header nav ul li a {
           display: block;
           padding: 5px; }
-      header nav ul li:hover {
-        background-color: #f4f4f4; }
+      header nav ul .active {
+        border-bottom: 1px solid #a3a3a3; }
+      header nav ul .active:hover a {
+        border: none; }
   header .pull-right {
     display: none;
     margin-top: 10px; }
@@ -201,12 +203,13 @@ header {
     padding: 6px 0; }
     .side-library .curriculum li img {
       vertical-align: middle;
-      width: 70px;
+      width: 55px;
       margin-right: 10px; }
     .side-library .curriculum li .info {
       display: inline-block;
       vertical-align: middle;
-      margin-right: 20px; }
+      margin-right: 10px;
+      width: 120px; }
       .side-library .curriculum li .info p {
         font-weight: 700; }
       .side-library .curriculum li .info span {
@@ -218,7 +221,8 @@ header {
       width: 25px;
       height: 25px;
       border-radius: 50%;
-      text-align: center; }
+      text-align: center;
+      vertical-align: middle; }
       .side-library .curriculum li .run-scene-btn img {
         padding: 3px;
         width: 9px;
@@ -252,8 +256,6 @@ header {
         margin-bottom: 3px; }
     .side-library .main-library {
       display: initial; }
-    .side-library .curriculum li img {
-      width: 60px; }
     .side-library .curriculum li .run-scene-btn {
       display: inline-block;
       width: 22px;

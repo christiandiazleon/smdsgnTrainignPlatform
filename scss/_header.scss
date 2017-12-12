@@ -28,8 +28,11 @@ header {
                     padding: 5px;
                 }
             }
-            li:hover {
-                background-color: $light-gray;
+            .active {
+                border-bottom: $border;
+            }
+            .active:hover a {
+                border: none;
             }
         }
     }
