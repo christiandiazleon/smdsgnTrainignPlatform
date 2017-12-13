@@ -12,11 +12,7 @@
         margin: 10px 0;
         text-align: center;
         input {
-            padding: 7px 13px;
-            @include border-radius(50px);
-            border: $border;
             margin-right: 5px;
-            font-size: 0.9em;
         }
         img {
             height: 20px;
@@ -30,10 +26,7 @@
 
         select {
             padding: 6px 12px;
-            @include border-radius(50px);
-            border: $border;
             margin-right: 5px;
-            font-size: 0.9em; 
             width: 200px;           
         }
     }
@@ -95,6 +88,9 @@
         }
         li:last-child {
             margin-bottom: 20px;
+        }
+        li:hover img{
+            background-size: 120%;
         }
     }
 }

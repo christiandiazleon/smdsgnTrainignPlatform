@@ -5,11 +5,7 @@
             margin: 10px 0;
             text-align: center;
             input {
-                padding: 7px 13px;
-                @include border-radius(50px);
-                border: $border;
                 margin-right: 5px;
-                font-size: 0.9em;
             }
             img {
                 height: 20px;
@@ -72,35 +68,6 @@
                     @include border-radius(0)
                 }
             }
-            .content {
-                .carousel-full-width {
-                    height: 300px;
-                    width: 100%;
-                    overflow: hidden;
-                    .carousel-images {
-                        height: inherit;
-                        width: 400%;
-                        display: flex;
-                        div {
-                            height: inherit;
-                            width: 100%;
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                        }
-                    }
-                    .car-control-prev, .car-control-next{
-                        height: 60px;
-                        width: auto;
-                        cursor: pointer;
-                        position: relative;
-                        padding: 40px 10px;
-                    }
-                    .car-control-next {
-                        float: right;
-                    }
-                }
-            }
         }
         .category {
             margin-bottom: 30px;
@@ -143,9 +110,7 @@
 
 @media (min-width: 1000px) {
     .shop {
-        display: inline-block; 
-        vertical-align: top;
-        max-width: 920px;
+        
         .top-bar {
             margin-bottom: 0;
             .search-icon {
@@ -189,13 +154,6 @@
                         color: #fff;
                         font-weight: 700;
                         letter-spacing: 0.03em;
-                    }
-                }
-                .content {
-                    .carousel-full-width {
-                        .car-control-prev, .car-control-next{
-                            height: 40px;
-                        }
                     }
                 }
                 .content {

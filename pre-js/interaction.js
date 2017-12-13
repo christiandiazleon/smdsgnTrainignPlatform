@@ -14,7 +14,7 @@ $(document).ready(function($) {
     });
     
     // evitar que los elementos a que no tengan link refresquen la pagina
-    $("a[href='#']").on('click', function (e) {
+    $("a[href='#'], a[href='']").on('click', function (e) {
         e.preventDefault();
     });
     

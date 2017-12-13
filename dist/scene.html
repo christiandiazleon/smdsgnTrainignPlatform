@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <title>Shop</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <!-- logo virtual skill -->
+            <div class="vslogo">
+                <img src="img/vslogo.svg" alt="">
+            </div> 
+            
+            <nav>
+                <a href="#" class="menu-btn">Menú</a>
+                
+                <ul>
+                    <li><a href="shop.html">Tienda</a></li>
+                    <li class="active"><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Clasificación</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Perfil, Opciones y Carrito -->
+            <div class="pull-right">
+                <div class="profile-opt">
+                    <img src="img/icons/user.svg" alt="">
+                    <span>
+                        <p>Jerónimo</p>
+                        <img src="img/icons/toggle.svg" alt="">
+                    </span>
+                    <!-- Link de pantalla de opciones -->
+                    <a href="#"><img src="img/icons/gear.svg" alt=""></a>
+                </div>
+                <!-- carrito -->
+                <a href="#" class="shop-cart">
+                    <img src="img/icons/cart.svg" alt="">
+                    <p>Carrito</p>
+                </a>
+            </div>
+            <!-- // Termina Perfil, Opciones y Carrito // -->
+        </div>
+    </header>
+    
+    <!-- // Comienza Wrapper -->
+    <div class="wrapper">
+        
+        <!-- Comienza Barra lateral donde esta la biblioteca -->
+        <div class="side-library">
+            <h3>Mis escenas</h3>
+            
+            <!-- input de busqueda de escenas en la biblioteca -->
+            <div class="search-icon">
+                <input type="text" name="lib-search" id="lib-search" placeholder="Buscar en biblioteca">
+                <img src="img/icons/search.svg" alt="">
+            </div>
+            <!-- // input de busqueda de escenas en la biblioteca -->
+            
+            <div class="filter">
+                <p>Ordenar por:</p>
+                <select name="" id="">
+                    <option value="">fecha de compra</option>
+                    <option value="">Nombre</option>
+                </select>
+            </div>
+            
+            <!-- Comienza Contenedor de los curriculos -->
+            <div class="main-library">
+                
+                <!-- Comienza curriculo-->
+                <div class="curriculum">
+                    <h5>Sin curriculo asignado<img src="img/icons/toggle-white.svg" alt=""></h5>
+                    <ul>
+                        <!-- Comienza escenario -->
+                        <li>
+                            <!-- este link es para llevarte a la escena en la biblioteca -->
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_1.png" alt="">
+                                <div class="info">
+                                    <p>Simulación de procedimientos cardiacos</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <!-- boton para ejecutar la escenario -->
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        <!-- //  Termina escenario  // -->
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_2.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 2</p>
+                                    <span>54h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_3.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 3</p>
+                                    <span>23h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_4.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 4</p>
+                                    <span>12h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- // Termina curriculo // -->
+                
+                <!-- Comienza curriculo-->
+                <div class="curriculum">
+                    <h5>Laparoscopia - curriculo<img src="img/icons/toggle-white.svg" alt=""></h5>
+                    <ul>
+                        <!-- Comienza escenario -->
+                        <li>
+                            <!-- este link es para llevarte a la escena en la biblioteca -->
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <!-- boton para ejecutar el escenario -->
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        <!-- //  Termina escenario  // -->
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- // Termina curriculo // -->
+                
+                
+            </div>
+            <!-- // Termina Contenedor de los curriculos // -->
+            
+        </div>
+        <!-- // Termina Barra lateral donde esta la biblioteca // -->
+        
+        <!-- Comienza escenario -->
+        <div class="scene main-cont">
+            
+            <!-- Comienza contenido principal (carousel, contenido extra, comentarios) -->
+            <div class="main">
+                <!-- Nombre del producto -->
+                <h2 class="scene-title">Simulación de procedimientos cardiacos</h2>
+                <!-- Comienza carousel -->
+                <div class="carousel carousel-full-width">
+                    
+                    <!-- Comienza imagenes del carousel -->
+                    <!-- Este ↓ link te lleva a la pagina del escenario -->
+                    <a href="#" class="carousel-images">
+                        <div style="background-image: url('img/scenes/screenshot_1.jpg')"></div>
+                        <div style="background-image: url('img/scenes/screenshot_2.png')"></div>
+                        <div style="background-image: url('img/scenes/screenshot_3.png')"></div>
+                        <div style="background-image: url('img/scenes/screenshot_4.png')"></div>
+                    </a>
+                    <!-- // Termina imagenes del carousel -->
+                    
+                    <img class="car-control-prev" src="img/icons/slider-arrow-prev.svg" alt="<">
+                    <img class="car-control-next" src="img/icons/slider-arrow-next.svg" alt=">">   
+                    
+                </div>
+                <!-- // Termina Carousel -->
+                <!-- Nombre del producto y agregar al carrito -->
+                <div class="product-info">
+                    <h3>Simulación de procedimientos cardiacos</h3>
+                    <div class="pull-right">
+                        <!-- ↓ Click para agregar al carrito ↓ -->
+                        <div class="cart"><img src="img/icons/cart-white.svg" alt=""></div>
+                        <div class="price">
+                            <p>COP$ 40.000</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comienza Contenido Extra -->
+                <div class="dlc-cont">
+                    <h3>Contenido extra</h3>
+                    
+                    <!-- Comienza item DLC -->
+                    <div class="dlc">
+                        <p class="name">Bypass de arteria coronaria</p>
+                        <!-- ↓ Click para agregar al carrito ↓ -->
+                        <a href="#" class="add-cart">
+                            <div class="cart"><img src="img/icons/cart-white.svg" alt=""></div>
+                            <p class="price">COP$ 15.000</p>
+                        </a>
+                    </div>
+                    <!-- // Termina item DLC -->
+                    
+                    <div class="dlc">
+                        <p class="name">Reparación o reemplazo de valvula</p>
+                        <a href="#" class="add-cart">
+                            <div class="cart"><img src="img/icons/cart-white.svg" alt=""></div>
+                            <p class="price">COP$ 15.000</p>
+                        </a>
+                    </div>
+                    
+                    <div class="dlc">
+                        <p class="name">Tratamiento de arritmias</p>
+                        <a href="#" class="add-cart">
+                            <div class="cart"><img src="img/icons/cart-white.svg" alt=""></div>
+                            <p class="price">COP$ 15.000</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <!-- // Termina Contenido Extra -->
+                
+                <!-- Comienza Requerimientos del Escenario -->
+                <div class="requirements">
+                    <h3>Requerimientos de hardware</h3>
+                    <div class="column">
+                        <p class="title">Mínimos</p>
+                        <ul>
+                            <li><span>SO: </span>Windows 7 64bit</li>
+                            <li><span>Procesador: </span>Intel i5-4590</li>
+                            <li><span>Memoria: </span>8 GB de RAM</li>
+                            <li><span>Gráficos: </span>Nvidia Geforce GTX 970</li>
+                            <li><span>DirectX: </span>Versión 11</li>
+                            <li><span>Almacenamiento: </span> 8 GB de espacio disponible</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="column">
+                        <p class="title">Recomendados</p>
+                        <ul>
+                            <li><span>SO: </span>Windows 7 64bit</li>
+                            <li><span>Procesador: </span>Intel i5-4590</li>
+                            <li><span>Memoria: </span>8 GB de RAM</li>
+                            <li><span>Gráficos: </span>Nvidia Geforce GTX 970</li>
+                            <li><span>DirectX: </span>Versión 11</li>
+                            <li><span>Almacenamiento: </span> 8 GB de espacio disponible</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <!-- // Termina Requerimientos del Escenario -->
+                
+                <!-- Comienza ComentarioS -->
+                <div class="comments">
+                    
+                    <div class="title-filter">
+                        <h2>Análisis de usuarios</h2>
+                        <!-- Puntaje del escenario ↓ -->
+                        <div class="stars"><img src="img/icons/4-star.svg" alt=""></div>
+                        <div class="pull-right">
+                            <div class="filter">
+                                <p>Ordenar por:</p>
+                                <!-- Filtro para ordenar comentarios ↓ -->
+                                <select name="comment-filter" id="comment-filter">
+                                    <option value="utility">Utilidad</option>
+                                    <option value="date">Fecha</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comienza Comentario -->
+                    <div class="comment">
+                        <div class="user-info">
+                            <!-- Foto de perfil de usuario ↓ -->
+                            <div class="photo" style="background-image: url('img/icons/user.png')"></div>
+                            <p class="name">Nombre Apellido</p>
+                        </div>
+                        
+                        <div class="message">
+                            
+                            <div class="top">
+                                <p>Calificación</p>
+                                <!-- Puntaje ↓ que le da el usuario al escenario -->
+                                <img src="img/icons/4-star.svg" alt="">
+                                <div class="pull-right">
+                                    <span>Publicado: </span>
+                                    <!-- Fecha de publicación ↓ -->
+                                    <p>20 septiembre 2017</p>
+                                </div>
+                            </div>
+                            
+                            <div class="content">
+                                <!-- Contenido del comentario ↓ -->
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam eum hic, voluptatibus veritatis ipsum eveniet vero eos adipisci eius, molestias rerum commodi facere mollitia ea minima minus, laborum reprehenderit praesentium?
+                                </p>
+                            </div>
+                            
+                            <div class="bottom">
+                                <p>¿Es útil este análisis?</p>
+                                <!-- relación en porcentaje de votos positivos ↓ -->
+                                <span class="percentage">97%</span>
+                                <div class="rate">
+                                    <!-- Dar click aquí ↓ si este comentario te fue util  -->
+                                    <img class="thumb-up" src="img/icons/thumb-up.svg" alt="">
+                                    <!-- Dar click aquí ↓ si este comentario NO te fue util  -->
+                                    <img class="thumb-down" src="img/icons/thumb-down.svg" alt="">
+                                </div>
+                                <div class="pull-right">
+                                    <p class="read-more">Leer más</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Termina Comentario -->
+                    
+                </div>
+                <!-- // Termina ComentarioS -->
+                
+            </div>
+            <!-- // Termina contenido principal (carousel contenido extra, comentarios) -->
+            
+            
+            
+            <!-- Comienza contenido al lado (Thumbnail, descripción del escenario, categorías, dipositivos soportados, Características) -->
+            <div class="aside">
+                
+                <div class="main-info">
+                    <div class="image">
+                        <h4>Nombre del desarollador</h4>
+                    </div>
+                    <div class="category description">
+                        <p class="title">Descripción</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptate fuga numquam nesciunt tenetur ipsa animi blanditiis ut sit. Fugit autem nihil temporibus impedit! Veniam culpa suscipit odit quia voluptate!
+                        </p>
+                    </div>
+                    <div class="category stars">
+                        <p class="title">Análisis de usuarios</p>
+                        <!-- Puntaje del escenario ↓ -->
+                        <img src="img/icons/4-star.svg" alt="">
+                    </div>
+                    <div class="category date">
+                        <p class="title">Fecha de lanzamiento</p>
+                        <p>23 Mayo 2017</p>
+                    </div>
+                    <div class="category tags">
+                        <p class="title">Categorías</p>
+                        <span>Cardiaco</span>
+                        <span>Procedimiento</span>
+                        <span>Quirurgico</span>
+                        <span>SurgiCall</span>
+                    </div>
+                </div>
+                
+                <!-- Comienza Lista de Dispositivos Soportados -->
+                <div class="aside-list">
+                    
+                    <h4>Dispositivos soportados</h4>
+                    
+                    <ul>
+                        <!-- Comienza Dispositivo soportado -->
+                        <li>
+                            <!-- Icono de dispositivo ↓ -->
+                            <div class="img"><img src="img/icons/.svg" alt=""></div>
+                            <div class="name">HTC Vive</div>
+                        </li>
+                        <!-- // Termina Dispositivo soportado -->
+                        <li>
+                            <div class="img"><img src="img/icons/.svg" alt=""></div>
+                            <div class="name">Oculus</div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="img/icons/.svg" alt=""></div>
+                            <div class="name">OS VR</div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="img/icons/.svg" alt=""></div>
+                            <div class="name">Leap Motion</div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- // Termina Lista de Dispositivos Soportados -->
+                
+                <!-- Comienza Lista de Características -->
+                <div class="aside-list">
+                    
+                    <h4>Características</h4>
+                    
+                    <ul>
+                        <!-- Comienza Característica -->
+                        <li>
+                            <!-- Icono de la característica ↓ -->
+                            <div class="img"><img src="img/icons/.svg" alt=""></div>
+                            <div class="name">SurgiCall</div>
+                        </li>
+                        <!-- // Termina Característica -->
+                        <li>
+                            <div class="img"><img src="img/icons/.svg" alt=""></div>
+                            <div class="name">Logros</div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="img/icons/.svg" alt=""></div>
+                            <div class="name">Análisis de métricas</div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- // Termina Lista de Características -->
+                
+            </div>
+            <!-- // Termina contenido al lado (Thumbnail, descripción del escenario, categorías, dipositivos soportados, Características) -->
+            
+            
+        </div>
+        <!-- // Termina escenario -->
+        
+        
+        
+    </div>
+    <!-- // Termina Wrapper -->
+</body>
+
+<script>$('body').fadeIn(100);</script>
+</html>

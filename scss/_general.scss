@@ -11,12 +11,56 @@
     color: $dark-gray;
 }
 
-// body {
-//     display: none;
-// }
+.rotated {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+body {
+    display: none;
+}
 
 .wrapper {
     max-width: 1200px;
+}
+
+input, select {
+    padding: 7px 13px;
+    @include border-radius(50px);
+    border: $border;
+    font-size: 0.9em;
+}
+
+// Carousel full-width
+.carousel-full-width {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    .carousel-images {
+        height: inherit;
+        width: 400%;
+        display: flex;
+        div {
+            height: inherit;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .car-control-prev, .car-control-next{
+        height: 60px;
+        width: auto;
+        cursor: pointer;
+        position: relative;
+        padding: 40px 10px;
+    }
+    .car-control-next {
+        float: right;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -37,10 +81,20 @@
     }
 }
 
-.rotated {
-    transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+
+
+@media (min-width: 1000px) {
+    .main-cont {
+        display: inline-block; 
+        vertical-align: top;
+        max-width: 920px;
+    }
+    .carousel-full-width {
+        .car-control-prev, .car-control-next{
+            height: 40px!important;
+        }
+    }
+    .pull-right {
+        float: right;
+    }
 }
