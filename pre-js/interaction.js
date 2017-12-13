@@ -25,4 +25,9 @@ $(document).ready(function($) {
     });
     $('.curriculum h5 img').toggleClass("rotated");
     
+    // Botón de leer mas en los comentarios de escena
+    $(".comment .read-more").on("click", function () {
+        $(this).parent().parent().siblings(".content").toggleClass("show-all-content");
+    });
+
 });

@@ -577,9 +577,11 @@ header {
     background-color: #fff;
     padding: 10px 20px 10px 10px;
     overflow-y: hidden;
-    max-height: 95px; }
+    max-height: 76px; }
     .scene .comments .comment .message .content p {
       line-height: 1.2em; }
+  .scene .comments .comment .message .show-all-content {
+    max-height: inherit; }
   .scene .comments .comment .message .bottom {
     margin-top: 10px; }
     .scene .comments .comment .message .bottom p {
@@ -596,6 +598,7 @@ header {
       display: inline-block;
       vertical-align: middle; }
       .scene .comments .comment .message .bottom .rate img {
+        cursor: pointer;
         width: 33px;
         height: 33px; }
     .scene .comments .comment .message .bottom .read-more {
@@ -603,4 +606,136 @@ header {
       margin-bottom: 0;
       text-transform: uppercase;
       font-size: 0.9em;
-      font-weight: 600; }
+      font-weight: 600;
+      cursor: pointer; }
+
+.scene .aside {
+  margin: 0 10px; }
+  .scene .aside .main-info, .scene .aside .aside-list {
+    border: 1px solid #a3a3a3;
+    margin-bottom: 10px; }
+  .scene .aside .main-info .image {
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .scene .aside .main-info .image h4 {
+      height: 18px;
+      position: relative;
+      top: 113px;
+      padding: 10px;
+      color: #fff;
+      background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.664); }
+  .scene .aside .main-info .category {
+    padding: 10px; }
+    .scene .aside .main-info .category .title {
+      font-weight: 700;
+      margin-bottom: 5px; }
+  .scene .aside .main-info .stars {
+    width: 150px;
+    height: auto; }
+  .scene .aside .main-info .tags span {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    background-color: #bababa;
+    padding: 4px 6px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #fff;
+    font-size: 0.9em; }
+  .scene .aside .aside-list h4 {
+    background-color: #a3a3a3;
+    color: #fff;
+    padding: 10px; }
+  .scene .aside .aside-list ul li {
+    border-bottom: 1px solid #a3a3a3; }
+    .scene .aside .aside-list ul li .img {
+      padding: 10px;
+      display: inline-block;
+      background-color: #bababa;
+      margin-right: 7px; }
+      .scene .aside .aside-list ul li .img img {
+        height: auto;
+        width: 15px; }
+    .scene .aside .aside-list ul li .name {
+      display: inline-block; }
+  .scene .aside .aside-list ul li:last-child {
+    border-bottom: none; }
+
+@media (min-width: 1000px) {
+  .scene .main {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; }
+    .scene .main .product-info {
+      min-height: 50px; }
+      .scene .main .product-info h3 {
+        display: inline-block;
+        width: 58%; }
+      .scene .main .product-info .cart {
+        display: inline-block;
+        height: 32px;
+        vertical-align: top;
+        margin-right: -3px;
+        border-right: 1px solid #fff;
+        padding: 9px 10px;
+        cursor: pointer; }
+      .scene .main .product-info .price {
+        display: inline-block;
+        height: 36px;
+        vertical-align: top;
+        border: none; }
+        .scene .main .product-info .price p {
+          line-height: 36px; }
+    .scene .main .dlc-cont .dlc {
+      overflow: hidden; }
+      .scene .main .dlc-cont .dlc .name {
+        display: inline-block;
+        vertical-align: top;
+        width: 60%; }
+      .scene .main .dlc-cont .dlc .add-cart {
+        display: inline-block;
+        float: right; }
+      .scene .main .dlc-cont .dlc .cart {
+        vertical-align: top; }
+      .scene .main .dlc-cont .dlc .price {
+        vertical-align: top;
+        font-size: 1em; }
+    .scene .main .requirements .column {
+      display: inline-block; }
+    .scene .main .requirements .column:nth-child(2) {
+      margin-right: 20px; }
+    .scene .main .comments .title-filter .stars-cont {
+      display: inline-block; }
+    .scene .main .comments .title-filter .filter {
+      display: inline-block;
+      margin-top: 0; }
+    .scene .main .comments .comment .message .top img {
+      width: 120px; }
+    .scene .main .comments .comment .message .top .pull-right {
+      margin-bottom: 10px;
+      margin-top: 0; }
+      .scene .main .comments .comment .message .top .pull-right p {
+        margin-right: 0; }
+    .scene .main .comments .comment .message .bottom p {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 0;
+      vertical-align: middle; }
+    .scene .main .comments .comment .message .bottom .rate {
+      vertical-align: middle; }
+    .scene .main .comments .comment .message .bottom .read-more {
+      padding: 0;
+      margin: 0; }
+  .scene .aside {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 260px; } }

@@ -176,10 +176,13 @@
                     background-color: #fff;
                     padding: 10px 20px 10px 10px;
                     overflow-y: hidden;
-                    max-height: 95px;
+                    max-height: 76px;
                     p {
                         line-height: 1.2em;
                     }
+                }
+                .show-all-content {
+                    max-height: inherit; 
                 }
                 .bottom {
                     margin-top: 10px;
@@ -196,9 +199,10 @@
                         margin-right: 5px;
                     }   
                     .rate {
-                     display: inline-block;
-                     vertical-align: middle;
+                        display: inline-block;
+                        vertical-align: middle;
                         img {
+                            cursor: pointer;
                             width: 33px;
                             height: 33px;
                         }
@@ -209,6 +213,7 @@
                         text-transform: uppercase;
                         font-size: 0.9em;
                         font-weight: 600;
+                        cursor: pointer;
                     }
                 }
             }
@@ -216,6 +221,189 @@
     }
     
     .aside {
-        
+        margin: 0 10px;
+        .main-info, .aside-list, {
+            border: $border;
+            margin-bottom: 10px;
+        }
+        .main-info {
+            .image {
+                height: 150px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                h4{
+                    height: 18px;
+                    position: relative;
+                    top: 113px;
+                    padding: 10px;
+                    color: #fff;
+                    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+                    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+                    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+                    text-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.664);
+                }
+            }  
+            .category {
+                padding: 10px;
+                .title {
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+            }
+            .stars {
+                width: 150px;
+                height: auto;
+            }
+            .tags {
+                span {
+                    @include border-radius (7px);
+                    background-color: $medium-gray;
+                    padding: 4px 6px;
+                    margin-right: 2px;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 0.9em;
+                }
+            }
+        }
+        .aside-list {
+            h4 {
+                background-color: $gray;
+                color: #fff;
+                padding: 10px;
+            }
+            ul {
+                li {
+                    border-bottom: $border;
+                    .img {
+                        padding: 10px;
+                        display: inline-block;
+                        background-color: $medium-gray;
+                        margin-right: 7px;
+                        img {
+                            height: auto;
+                            width: 15px;
+                        }
+                    }
+                    .name {
+                        display: inline-block;
+                    }
+                }
+                li:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .scene {
+        .main {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+            .product-info {
+                min-height: 50px;
+                h3 {
+                    display: inline-block;
+                    width: 58%;
+                }
+                .cart {
+                    display: inline-block;
+                    height: 32px;
+                    vertical-align: top;
+                    margin-right: -3px;
+                    border-right: 1px solid #fff;
+                    padding: 9px 10px;
+                    cursor: pointer;
+                }
+                .price {
+                    display: inline-block;
+                    height: 36px;
+                    vertical-align: top;
+                    border: none;
+                    p {
+                        line-height: 36px;
+                    }
+                }
+            }
+            .dlc-cont {
+                .dlc {
+                    overflow: hidden;
+                    .name {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 60%;
+                    }
+                    .add-cart {
+                        display: inline-block;
+                        float: right;
+                    }
+                    .cart{
+                        vertical-align: top;                        
+                    }
+                    .price {
+                        vertical-align: top;
+                        font-size: 1em;                        
+                    }
+                }
+            }
+            .requirements {
+                .column{
+                    display: inline-block;
+                }
+                .column:nth-child(2) {
+                    margin-right: 20px;
+                }
+            }
+            .comments {
+                .title-filter {
+                    .stars-cont {
+                        display: inline-block;
+                    }
+                    .filter {
+                        display: inline-block;
+                        margin-top: 0;
+                    }
+                }
+                .comment .message .top{
+                    img {
+                        width: 120px;
+                    }
+                    .pull-right {
+                        margin-bottom: 10px;
+                        margin-top: 0;
+                        p{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                .comment .message .bottom {
+                    p{
+                        display: inline-block;
+                        margin-right: 20px;
+                        margin-bottom: 0;
+                        vertical-align: middle;
+                    }
+                    .rate {
+                        vertical-align: middle;
+                    }
+                    .read-more {
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .aside {
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+            width: 260px;
+        }
     }
 }
