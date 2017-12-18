@@ -200,8 +200,11 @@
             }
             .content {
                 padding: 10px;
+                max-height: 55px;
+                overflow: hidden;
             }
             a {
+                display: block;
                 font-weight: 700;
                 margin-top: 10px;
                 margin-left: 10px;

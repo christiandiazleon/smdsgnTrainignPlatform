@@ -882,8 +882,11 @@ header {
       font-size: 0.9em;
       margin: 5px 10px 0 10px; }
     .library .news .new .content {
-      padding: 10px; }
+      padding: 10px;
+      max-height: 55px;
+      overflow: hidden; }
     .library .news .new a {
+      display: block;
       font-weight: 700;
       margin-top: 10px;
       margin-left: 10px; }
