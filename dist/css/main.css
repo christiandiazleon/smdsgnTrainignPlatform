@@ -473,6 +473,7 @@ header {
     border: 1px solid #a3a3a3;
     margin-top: 5px; }
     .scene .main .dlc-cont .dlc a {
+      background-color: #59c140;
       display: block; }
     .scene .main .dlc-cont .dlc .name {
       padding: 10px;
@@ -480,7 +481,6 @@ header {
       font-size: 1.1em;
       display: block; }
     .scene .main .dlc-cont .dlc .cart {
-      background-color: #59c140;
       padding: 7px;
       text-align: right;
       display: inline-block;
@@ -490,7 +490,6 @@ header {
       .scene .main .dlc-cont .dlc .cart img {
         height: 25px; }
     .scene .main .dlc-cont .dlc .price {
-      background-color: #59c140;
       color: #fff;
       padding: 7px;
       line-height: 30px;
@@ -500,6 +499,12 @@ header {
       display: inline-block;
       height: 30px;
       vertical-align: top; }
+  .scene .main .dlc-cont .disable a {
+    background-color: #14b8f2; }
+    .scene .main .dlc-cont .disable a .cart {
+      display: none; }
+    .scene .main .dlc-cont .disable a .price {
+      padding: 7px 20px; }
 
 .scene .main .requirements {
   margin: 10px; }
@@ -828,6 +833,7 @@ header {
     border: 1px solid #a3a3a3;
     margin-top: 5px; }
     .library .dlc-cont .dlc a {
+      background-color: #59c140;
       display: block; }
     .library .dlc-cont .dlc .name {
       padding: 10px;
@@ -835,7 +841,6 @@ header {
       font-size: 1.1em;
       display: block; }
     .library .dlc-cont .dlc .cart {
-      background-color: #59c140;
       padding: 7px;
       text-align: right;
       display: inline-block;
@@ -845,7 +850,6 @@ header {
       .library .dlc-cont .dlc .cart img {
         height: 25px; }
     .library .dlc-cont .dlc .price {
-      background-color: #59c140;
       color: #fff;
       padding: 7px;
       line-height: 30px;
@@ -855,6 +859,12 @@ header {
       display: inline-block;
       height: 30px;
       vertical-align: top; }
+  .library .dlc-cont .disable a {
+    background-color: #14b8f2; }
+    .library .dlc-cont .disable a .cart {
+      display: none; }
+    .library .dlc-cont .disable a .price {
+      padding: 7px 20px; }
   .library .updates .update {
     border: 1px solid #a3a3a3;
     display: block;
