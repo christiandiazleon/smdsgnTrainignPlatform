@@ -500,6 +500,7 @@ header {
       height: 30px;
       vertical-align: top; }
   .scene .main .dlc-cont .disable a {
+    cursor: default;
     background-color: #14b8f2; }
     .scene .main .dlc-cont .disable a .cart {
       display: none; }
@@ -860,6 +861,7 @@ header {
       height: 30px;
       vertical-align: top; }
   .library .dlc-cont .disable a {
+    cursor: default;
     background-color: #14b8f2; }
     .library .dlc-cont .disable a .cart {
       display: none; }

@@ -71,6 +71,7 @@
             }
             .disable {
                 a{
+                    cursor: default;
                     background-color: $main-blue;
                     .cart {
                         display: none;
