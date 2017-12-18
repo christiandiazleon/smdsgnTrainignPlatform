@@ -171,13 +171,13 @@ $(document).ready(function($) {
     // ancho dinamico del contenido principal de la pantalla de escena para poner el aside
     function sceneMainResize () {
         if ($(window).width() > 1000) {
-            $(".scene .main").width(function () {
-                return $(".main-cont").width() - $(".scene .aside").width() - 20;
+            $(".main-cont .main").width(function () {
+                return $(".main-cont").width() - $(".main-cont .aside").width() - 20;
             });
-            $(".scene .aside").css("margin-top", $(".scene .main .scene-title").height() + 30);
+            $(".main-cont .aside").css("margin-top", $(".main-cont .main .main-title").height() + 30);
         } else {
-            $(".scene .main").width("auto");
-            $(".scene .aside").css("margin-top", 0);
+            $(".main-cont .main").width("auto");
+            $(".main-cont .aside").css("margin-top", 0);
         }
     }sceneMainResize ();
 
@@ -199,7 +199,7 @@ $(document).ready(function($) {
     // reposicionar el aside antes de main
     function asidePosChange () {
         if ($(window).width() < 1000) {
-            $(".main-cont .aside").insertAfter($(".main-cont .main .scene-title"));
+            $(".main-cont .aside").insertAfter($(".main-cont .main .main-title"));
          } else {
             $(".main-cont .aside").insertAfter($(".main-cont .main"));
          }

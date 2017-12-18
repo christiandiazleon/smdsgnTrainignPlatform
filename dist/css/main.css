@@ -441,7 +441,7 @@ header {
         text-align: center;
         font-size: 1.2em; } }
 
-.scene .main .scene-title {
+.scene .main .main-title {
   padding: 20px 10px 10px 10px;
   font-size: 1.7em; }
 
@@ -739,3 +739,215 @@ header {
     display: inline-block;
     vertical-align: top;
     width: 260px; } }
+
+.library {
+  margin-top: 50px; }
+  .library .aside {
+    margin-left: 10px;
+    margin-bottom: 10px; }
+    .library .aside .interest-links h4 {
+      margin-bottom: 7px; }
+    .library .aside .interest-links .links a {
+      padding: 2px 10px; }
+    .library .aside .interest-links .links a:first-child {
+      padding-left: 0; }
+  .library .main-title {
+    margin: 20px 10px; }
+    .library .main-title h2 {
+      font-size: 1.7em;
+      display: inline-block;
+      width: 60%;
+      vertical-align: middle; }
+    .library .main-title .image {
+      width: 100px;
+      height: 100px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle; }
+  .library .execute .exe-btn {
+    display: block;
+    background-color: #59c140;
+    padding: 20px;
+    text-align: center; }
+    .library .execute .exe-btn p {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.3em;
+      letter-spacing: 0.03em; }
+      .library .execute .exe-btn p img {
+        height: 25px;
+        vertical-align: middle;
+        margin-left: 10px; }
+  .library .execute .config {
+    display: block;
+    background-color: #a3a3a3;
+    text-align: center;
+    padding: 9px;
+    margin-top: 3px; }
+    .library .execute .config img {
+      height: 25px;
+      vertical-align: middle; }
+  .library .scene-time {
+    margin: 10px;
+    font-size: 0.9em; }
+    .library .scene-time .hours {
+      font-weight: 600;
+      font-size: 1.1em; }
+  .library .section {
+    margin: 20px 10px 0 10px; }
+    .library .section h3 {
+      font-size: 1.3em;
+      margin-bottom: 10px; }
+  .library .achievements .container img {
+    width: 72px;
+    height: 72px; }
+  .library .achievements .number-of .pull-right a {
+    font-weight: 700; }
+  .library .clasify .special-clas img {
+    width: 90px;
+    height: 90px;
+    vertical-align: middle;
+    margin-right: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px; }
+  .library .clasify .special-clas .info {
+    display: inline-block;
+    vertical-align: middle; }
+    .library .clasify .special-clas .info .name {
+      display: block; }
+    .library .clasify .special-clas .info .description {
+      display: block; }
+  .library .dlc-cont .dlc {
+    border: 1px solid #a3a3a3;
+    margin-top: 5px; }
+    .library .dlc-cont .dlc a {
+      display: block; }
+    .library .dlc-cont .dlc .name {
+      padding: 10px;
+      font-weight: 600;
+      font-size: 1.1em;
+      display: block; }
+    .library .dlc-cont .dlc .cart {
+      background-color: #59c140;
+      padding: 7px;
+      text-align: right;
+      display: inline-block;
+      height: 30px;
+      vertical-align: top;
+      margin-right: -4px; }
+      .library .dlc-cont .dlc .cart img {
+        height: 25px; }
+    .library .dlc-cont .dlc .price {
+      background-color: #59c140;
+      color: #fff;
+      padding: 7px;
+      line-height: 30px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1em;
+      display: inline-block;
+      height: 30px;
+      vertical-align: top; }
+  .library .updates .update {
+    border: 1px solid #a3a3a3;
+    display: block;
+    margin-top: 5px;
+    padding: 7px; }
+    .library .updates .update .name {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: 700; }
+    .library .updates .update .pull-right {
+      display: inline-block;
+      font-size: 0.9em; }
+      .library .updates .update .pull-right .version {
+        font-weight: 700;
+        margin-left: 5px; }
+  .library .news .new {
+    border: 1px solid #a3a3a3;
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+    .library .news .new h4 {
+      background-color: #f4f4f4;
+      padding: 10px;
+      font-size: 1.1em; }
+    .library .news .new .date {
+      font-size: 0.9em;
+      margin: 5px 10px 0 10px; }
+    .library .news .new .content {
+      padding: 10px; }
+    .library .news .new a {
+      font-weight: 700;
+      margin-top: 10px;
+      margin-left: 10px; }
+
+@media (min-width: 1000px) {
+  .library .section {
+    margin-left: 60px; }
+  .library .main {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; }
+  .library .main-title {
+    margin-left: 60px; }
+    .library .main-title h2 {
+      width: 70%; }
+  .library .execute {
+    margin-left: 60px; }
+    .library .execute .exe-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      margin-right: 2px; }
+      .library .execute .exe-btn p {
+        vertical-align: middle;
+        margin-bottom: 3px; }
+        .library .execute .exe-btn p img {
+          height: 15px;
+          vertical-align: middle;
+          margin-bottom: 2px; }
+    .library .execute .config {
+      display: inline-block;
+      padding: 5px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      vertical-align: top;
+      margin: 0; }
+      .library .execute .config img {
+        height: 20px;
+        vertical-align: top; }
+  .library .scene-time {
+    margin-left: 60px; }
+  .library .achievements .container img {
+    width: 70px;
+    height: 70px; }
+  .library .dlc-cont .dlc {
+    overflow: hidden; }
+    .library .dlc-cont .dlc .name {
+      display: inline-block;
+      vertical-align: top;
+      width: 60%; }
+    .library .dlc-cont .dlc .add-cart {
+      display: inline-block;
+      float: right; }
+    .library .dlc-cont .dlc .cart {
+      vertical-align: top; }
+    .library .dlc-cont .dlc .price {
+      vertical-align: top;
+      font-size: 1em; }
+  .library .aside {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 170px; }
+    .library .aside .interest-links .links a {
+      display: block;
+      padding: 2px 0; } }

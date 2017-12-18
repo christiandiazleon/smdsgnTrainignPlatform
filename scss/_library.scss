@@ -1,5 +1,307 @@
 .library {
+    margin-top: 50px;
+    .aside {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        .interest-links {
+            h4 {
+                margin-bottom: 7px;
+            }
+            .links {
+                a {
+                    padding: 2px 10px;
+                }
+                a:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    
     .main-title {
-        font-size: 1.5em;
+        margin: 20px 10px;
+        h2 {
+            font-size: 1.7em;
+            display: inline-block;
+            width: 60%;
+            vertical-align: middle;
+        }
+        .image {
+            width: 100px;
+            height: 100px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    }
+    .execute {
+        .exe-btn {
+            display: block;
+            background-color: $green;
+            padding: 20px;
+            text-align: center;
+            p {
+                color: #fff;
+                font-weight: 700;
+                font-size: 1.3em;
+                letter-spacing: 0.03em;
+                img {
+                    height: 25px;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .config {
+            display: block;
+            background-color: $gray;
+            text-align: center;
+            padding: 9px;
+            margin-top: 3px;
+            img {
+                height: 25px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .scene-time {
+        margin: 10px;
+        font-size: 0.9em;
+        .hours {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+    }
+    .section {
+        margin: 20px 10px 0 10px;
+        h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+    }
+    .achievements {
+        .container {
+            img {
+                width: 72px;
+                height: 72px;
+            }
+        }
+        .number-of {  
+            .pull-right {
+                a {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .clasify {
+        .special-clas {
+            img { 
+                width: 90px;
+                height: 90px;
+                vertical-align: middle;
+                margin-right: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px; 
+                overflow: hidden;
+                margin-top: 10px;
+            }
+            .info {
+                display: inline-block;
+                vertical-align: middle;
+                .name {
+                    display: block;
+                }
+                .description {
+                    display: block;
+                }
+            }
+            
+        }
+    }
+    .dlc-cont {
+        .dlc {
+            border: $border;
+            margin-top: 5px;
+            a {
+                display: block;
+            }
+            .name {
+                padding: 10px;
+                font-weight: 600;
+                font-size: 1.1em;
+                display: block;
+            }
+            .cart {
+                background-color: $green;
+                padding: 7px;
+                text-align: right;
+                display: inline-block;
+                height: 30px;
+                vertical-align: top;
+                margin-right: -4px;
+                img {
+                    height: 25px;
+                }
+            }
+            .price {
+                background-color: $green;
+                color: #fff;
+                padding: 7px;
+                line-height: 30px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.1em;
+                display: inline-block;
+                height: 30px;
+                vertical-align: top;
+            }
+        }
+    }
+    .updates {
+        .update {
+            border: $border;
+            display: block;
+            margin-top: 5px;
+            padding: 7px;
+            .name {
+                display: inline-block;
+                margin-right: 15px;
+                font-weight: 700;
+            }.pull-right {
+                display: inline-block;
+                font-size: 0.9em;
+                .version {
+                    font-weight: 700;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    
+    .news {
+        .new {
+            border: $border;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            h4 {
+                background-color: $light-gray;
+                padding: 10px;
+                font-size: 1.1em;
+            }
+            .date {
+                font-size: 0.9em;
+                margin: 5px 10px 0 10px;
+            }
+            .content {
+                padding: 10px;
+            }
+            a {
+                font-weight: 700;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .library {
+        .section {
+            margin-left: 60px;
+        }
+        .main {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+        }
+        .main-title {
+            margin-left: 60px;
+            h2 {
+                width: 70%;
+            }
+        }
+        .execute {
+            margin-left: 60px;
+            .exe-btn {
+                display: inline-block;
+                padding: 10px 20px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px; 
+                margin-right: 2px;
+                p {
+                    vertical-align: middle;
+                    margin-bottom: 3px;
+                    img {
+                        height: 15px;
+                        vertical-align: middle;
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+            .config {
+                display: inline-block;
+                padding: 5px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px; 
+                vertical-align: top;
+                margin: 0;
+                img {
+                    height: 20px;
+                    vertical-align: top;
+                }
+            }
+        }
+        .scene-time {
+            margin-left: 60px;
+        }
+        .achievements {
+            .container {
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+        .dlc-cont {
+            .dlc {
+                overflow: hidden;
+                .name {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 60%;
+                }
+                .add-cart {
+                    display: inline-block;
+                    float: right;
+                }
+                .cart{
+                    vertical-align: top;                        
+                }
+                .price {
+                    vertical-align: top;
+                    font-size: 1em;                        
+                }
+            }
+        }
+        .aside {
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+            width: 170px;
+            .interest-links {
+                .links {
+                    a {
+                        display: block;
+                        padding: 2px 0;
+                    }
+                }
+            }
+        }
     }
 }
