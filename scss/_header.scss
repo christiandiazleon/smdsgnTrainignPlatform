@@ -80,22 +80,12 @@ header {
                 display: inline-block;
             }
         }
+        .active {
+            border-bottom: 2px solid $green;
+        }
     }
 }
 
-
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    
-}
-
-// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1000px) {
     header {
         margin-bottom: 0;
@@ -135,13 +125,15 @@ header {
             display: inline-block;
             margin-top: 10px;
             float: right;
+            text-align: right;
             .profile-opt {
                 padding: 8px;
             }
             .shop-cart {
                 text-align: right;
-                display: block;
+                display: inline-block;
                 padding: 8px;
+                margin-right: 15px;
                 img {
                     height: 25px;
                     vertical-align: middle;

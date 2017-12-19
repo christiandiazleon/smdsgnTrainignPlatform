@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <title>Shop</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <!-- logo virtual skill -->
+            <div class="vslogo">
+                <img src="img/vslogo.svg" alt="">
+            </div> 
+            
+            <nav>
+                <a href="#" class="menu-btn">Menú</a>
+                
+                <ul>
+                    <li><a href="shop.html">Tienda</a></li>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Clasificación</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Perfil, Opciones y Carrito -->
+            <div class="pull-right">
+                <div class="profile-opt">
+                    <img src="img/icons/user.svg" alt="">
+                    <span>
+                        <p>Jerónimo</p>
+                        <img src="img/icons/toggle.svg" alt="">
+                    </span>
+                    <!-- Link de pantalla de opciones -->
+                    <a href="#"><img src="img/icons/gear.svg" alt=""></a>
+                </div>
+                <!-- carrito -->
+                <a href="#" class="shop-cart active">
+                    <img src="img/icons/cart.svg" alt="">
+                    <p>Carrito</p>
+                </a>
+            </div>
+            <!-- // Termina Perfil, Opciones y Carrito // -->
+        </div>
+    </header>
+    
+    <!-- // Comienza Wrapper -->
+    <div class="wrapper">
+        
+        <!-- Comienza Barra lateral donde esta la biblioteca -->
+        <div class="side-library">
+            <h3>Mis escenas</h3>
+            
+            <!-- input de busqueda de escenas en la biblioteca -->
+            <div class="search-icon">
+                <input type="text" name="lib-search" id="lib-search" placeholder="Buscar en biblioteca">
+                <img src="img/icons/search.svg" alt="">
+            </div>
+            <!-- // input de busqueda de escenas en la biblioteca -->
+            
+            <div class="filter">
+                <p>Ordenar por:</p>
+                <select name="" id="">
+                    <option value="">fecha de compra</option>
+                    <option value="">Nombre</option>
+                </select>
+            </div>
+            
+            <!-- Comienza Contenedor de los curriculos -->
+            <div class="main-library">
+                
+                <!-- Comienza curriculo-->
+                <div class="curriculum">
+                    <h5>Sin curriculo asignado<img src="img/icons/toggle-white.svg" alt=""></h5>
+                    <ul>
+                        <!-- Comienza escenario -->
+                        <li>
+                            <!-- este link es para llevarte a la escena en la biblioteca -->
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_1.png" alt="">
+                                <div class="info">
+                                    <p>Simulación de procedimientos cardiacos</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <!-- boton para ejecutar la escenario -->
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        <!-- //  Termina escenario  // -->
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_2.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 2</p>
+                                    <span>54h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_3.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 3</p>
+                                    <span>23h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_4.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 4</p>
+                                    <span>12h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#"><img src="img/icons/play.svg" alt=""></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- // Termina curriculo // -->
+                
+                <!-- Comienza curriculo-->
+                <div class="curriculum">
+                    <h5>Laparoscopia - curriculo<img src="img/icons/toggle-white.svg" alt=""></h5>
+                    <ul>
+                        <!-- Comienza escenario -->
+                        <li>
+                            <!-- este link es para llevarte a la escena en la biblioteca -->
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <!-- boton para ejecutar el escenario -->
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        <!-- //  Termina escenario  // -->
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="container" href="#">
+                                <img src="img/scenes/miniature_5.png" alt="">
+                                <div class="info">
+                                    <p>Escenario 1</p>
+                                    <span>32h</span>
+                                </div>
+                            </a>
+                            <a class="run-scene-btn" href="#">
+                                <img src="img/icons/play.svg" alt="">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- // Termina curriculo // -->
+                
+                
+            </div>
+            <!-- // Termina Contenedor de los curriculos // -->
+            
+        </div>
+        <!-- // Termina Barra lateral donde esta la biblioteca // -->
+        
+        <!-- Comienza carrito de compras -->
+        <div class="cart main-cont">
+            <div class="main">
+                
+                <h2 class="main-title">Carrito<img src="img/icons/cart.svg" alt=""></h2>
+                <div class="shop-list">
+                    
+                    <!-- Comienza item de compra -->
+                    <div class="item">
+                        <div class="image" style="background-image: url('img/scenes/thumbnail_1.jpg')"></div>
+                        <div class="name">
+                            <p>Nombre del producto</p>
+                        </div>
+                        <div class="pull-right">
+                            <!-- Botón ↓ para quitar el item del carrito-->
+                            <a href="#" class="cancel">
+                                <span>Quitar del carrito</span>
+                                <img src="img/icons/close.svg" alt="">
+                            </a>
+                            <span class="price">$ 30.000</span>
+                        </div>
+                    </div>
+                    <!-- // termina item de compra -->
+                    
+                    <div class="item">
+                        <div class="image" style="background-image: url('img/scenes/thumbnail_1.jpg')"></div>
+                        <div class="name">
+                            <p>Nombre del producto</p>
+                        </div>
+                        <div class="pull-right">
+                            <a href="#" class="cancel">
+                                <span>Quitar del carrito</span>
+                                <img src="img/icons/close.svg" alt="">
+                            </a>
+                            <span class="price">$ 30.000</span>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="total">
+                        <div class="pull-rig">
+                            <p>Total:</p>
+                            <p class="price">$ 60.000</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Comienza metodos de compra -->
+            <div class="aside">
+                <div class="payment">
+                    <form action="post">
+                        <h3>Método de pago</h3>
+                        <ul>
+                            <li>
+                                <input type="radio" name="payment-opt" id="debit" value="debit" checked>
+                                <label for="debit">Débito/Crédito</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="payment-opt" id="pse" value="pse">
+                                <label for="pse">PSE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="payment-opt" id="paypal" value="paypal">
+                                <label for="paypal">PayPal</label>
+                            </li>
+                        </ul>
+                        <div class="gift">
+                            <input type="checkbox" name="gift" id="gift">
+                            <label for="gift">Dar como regalo</label>
+                        </div>
+                        <button type="submit">Comprar</button>
+                    </form>
+                </div>
+            </div>
+            <!-- // Termina metodos de compra -->
+            
+        </div>
+        <!-- // Termina carrito de compras -->
+        
+        
+        
+    </div>
+    <!-- // Termina Wrapper -->
+</body>
+
+<script>$('body').fadeIn(100);</script>
+</html>
