@@ -1,0 +1,55 @@
+.login {
+    width: 258px;
+    margin: 8% auto;
+    img {
+        width: 165px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    h1 {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+    }
+    form {
+        input, select {
+            width: 230px;
+            margin-bottom: 15px;
+        }
+        select {
+            width: 258px;
+        }
+        input:nth-child(2) {
+            margin-bottom: 20px;
+        }
+        .forgot {
+            font-size: 0.9em;
+            color: $gray;
+        }
+        .forgot:hover {
+            text-decoration: underline;
+        }
+        button {
+            padding: 6px 14px;
+            border: none;
+            @include border-radius (5px)
+            background-color: $green;
+            font-weight: 600;
+            color: #fff;
+            float: right;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        p {
+            color: $gray;
+            font-size: 0.9em;
+            a {
+                font-weight: 600;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
