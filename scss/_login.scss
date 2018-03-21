@@ -12,6 +12,15 @@
         font-size: 1.1em;
         margin-bottom: 25px;
     }
+    .goback {
+        margin: 0 auto;
+        background-color: $green;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 600;
+        @include border-radius (5px);
+        float: right;
+    }
     form {
         input, select {
             width: 230px;
@@ -35,7 +44,6 @@
             border: none;
             @include border-radius (5px);
             background-color: $green;
-            font-weight: 600;
             color: #fff;
             float: right;
             margin-bottom: 20px;

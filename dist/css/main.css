@@ -1632,6 +1632,19 @@ header .pull-right .active {
   margin-bottom: 25px;
 }
 
+.login .goback {
+  margin: 0 auto;
+  background-color: #59c140;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 600;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  float: right;
+}
+
 .login form input, .login form select {
   width: 230px;
   margin-bottom: 15px;
@@ -1662,7 +1675,6 @@ header .pull-right .active {
   -ms-border-radius: 5px;
   border-radius: 5px;
   background-color: #59c140;
-  font-weight: 600;
   color: #fff;
   float: right;
   margin-bottom: 20px;
